@@ -26,20 +26,168 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblLightOnCim = new javax.swing.JLabel();
+        pnlJatekter = new javax.swing.JPanel();
+        btnLampa1 = new javax.swing.JButton();
+        btnLampa2 = new javax.swing.JButton();
+        btnLampa3 = new javax.swing.JButton();
+        btnLampa4 = new javax.swing.JButton();
+        btnLampa5 = new javax.swing.JButton();
+        btnLampa6 = new javax.swing.JButton();
+        btnLampa7 = new javax.swing.JButton();
+        btnLampa8 = new javax.swing.JButton();
+        btnLampa9 = new javax.swing.JButton();
+        btnUjJatek = new javax.swing.JButton();
+        lblFeladatleiras = new javax.swing.JLabel();
+        lblNyertel = new javax.swing.JLabel();
+        mnuBar = new javax.swing.JMenuBar();
+        mnuKilepes = new javax.swing.JMenu();
+        mnuUjJatek = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("LightOn Játék");
+        setBackground(new java.awt.Color(255, 204, 204));
+        setResizable(false);
+
+        lblLightOnCim.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        lblLightOnCim.setForeground(new java.awt.Color(0, 0, 255));
+        lblLightOnCim.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLightOnCim.setText("LightOn");
+
+        pnlJatekter.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Játéktér"));
+
+        btnLampa1.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa2.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa3.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa4.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa5.setBackground(new java.awt.Color(255, 255, 0));
+
+        btnLampa6.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa7.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa8.setBackground(new java.awt.Color(102, 102, 102));
+
+        btnLampa9.setBackground(new java.awt.Color(102, 102, 102));
+
+        javax.swing.GroupLayout pnlJatekterLayout = new javax.swing.GroupLayout(pnlJatekter);
+        pnlJatekter.setLayout(pnlJatekterLayout);
+        pnlJatekterLayout.setHorizontalGroup(
+            pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlJatekterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlJatekterLayout.createSequentialGroup()
+                        .addComponent(btnLampa7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnLampa8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnLampa9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlJatekterLayout.createSequentialGroup()
+                        .addGroup(pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlJatekterLayout.createSequentialGroup()
+                                .addComponent(btnLampa1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnLampa2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnLampa3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlJatekterLayout.createSequentialGroup()
+                                .addComponent(btnLampa4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnLampa5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnLampa6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        pnlJatekterLayout.setVerticalGroup(
+            pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlJatekterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnLampa1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnLampa4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlJatekterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnLampa7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLampa9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        btnUjJatek.setBackground(new java.awt.Color(51, 255, 51));
+        btnUjJatek.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnUjJatek.setText("Új játék");
+
+        lblFeladatleiras.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+        lblFeladatleiras.setForeground(new java.awt.Color(255, 0, 0));
+        lblFeladatleiras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblFeladatleiras.setText("Kapcsold le az összes lámpát!");
+
+        lblNyertel.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblNyertel.setForeground(new java.awt.Color(0, 153, 0));
+        lblNyertel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNyertel.setText("Gratulálok! Sikerült lekapcsolnod az összes lámpát!");
+
+        mnuKilepes.setText("Kilépés");
+        mnuBar.add(mnuKilepes);
+
+        mnuUjJatek.setText("Új játék");
+        mnuBar.add(mnuUjJatek);
+
+        setJMenuBar(mnuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblLightOnCim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblFeladatleiras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblNyertel, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(127, 127, 127)
+                                .addComponent(btnUjJatek))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(81, 81, 81)
+                                .addComponent(pnlJatekter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblLightOnCim)
+                .addGap(18, 18, 18)
+                .addComponent(lblFeladatleiras, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pnlJatekter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnUjJatek)
+                .addGap(18, 18, 18)
+                .addComponent(lblNyertel, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +227,22 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnLampa1;
+    private javax.swing.JButton btnLampa2;
+    private javax.swing.JButton btnLampa3;
+    private javax.swing.JButton btnLampa4;
+    private javax.swing.JButton btnLampa5;
+    private javax.swing.JButton btnLampa6;
+    private javax.swing.JButton btnLampa7;
+    private javax.swing.JButton btnLampa8;
+    private javax.swing.JButton btnLampa9;
+    private javax.swing.JButton btnUjJatek;
+    private javax.swing.JLabel lblFeladatleiras;
+    private javax.swing.JLabel lblLightOnCim;
+    private javax.swing.JLabel lblNyertel;
+    private javax.swing.JMenuBar mnuBar;
+    private javax.swing.JMenu mnuKilepes;
+    private javax.swing.JMenu mnuUjJatek;
+    private javax.swing.JPanel pnlJatekter;
     // End of variables declaration//GEN-END:variables
 }
