@@ -19,6 +19,11 @@
                 <Property name="text" type="java.lang.String" value="Ment&#xe9;s f&#xe1;jlba"/>
               </Properties>
             </Menu>
+            <Menu class="javax.swing.JMenu" name="mnuBetoltes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bet&#xf6;lt&#xe9;s f&#xe1;jlb&#xf3;l"/>
+              </Properties>
+            </Menu>
             <Menu class="javax.swing.JMenu" name="mnuKilepes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Kil&#xe9;p&#xe9;s"/>

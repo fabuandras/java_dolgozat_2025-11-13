@@ -44,6 +44,7 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         mnuBeallitasok = new javax.swing.JMenu();
         mnuUjJatek = new javax.swing.JMenu();
         mnuMentesFajlba = new javax.swing.JMenu();
+        mnuBetoltes = new javax.swing.JMenu();
         mnuKilepes = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -149,6 +150,9 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         mnuMentesFajlba.setText("Mentés fájlba");
         mnuBeallitasok.add(mnuMentesFajlba);
 
+        mnuBetoltes.setText("Betöltés fájlból");
+        mnuBeallitasok.add(mnuBetoltes);
+
         mnuKilepes.setText("Kilépés");
         mnuBeallitasok.add(mnuKilepes);
 
@@ -251,6 +255,7 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     private javax.swing.JLabel lblNyertel;
     private javax.swing.JMenuBar mnuBar;
     private javax.swing.JMenu mnuBeallitasok;
+    private javax.swing.JMenu mnuBetoltes;
     private javax.swing.JMenu mnuKilepes;
     private javax.swing.JMenu mnuMentesFajlba;
     private javax.swing.JMenu mnuUjJatek;
