@@ -4,6 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.LampaModell;
 import nezet.GUILightOnNezet;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class LightOnVezerlo {
 
@@ -27,6 +29,20 @@ public class LightOnVezerlo {
                 ujJatek();
             }
         });
+
+        nezet.getMnuKilepes().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                kilepes();
+            }
+        });
+
+        nezet.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                kilepes();
+            }
+        });
     }
 
     private void ujJatek() {
@@ -38,6 +54,13 @@ public class LightOnVezerlo {
         for (int i = 0; i < 9; i++) {
             boolean lampaAllapot = modell.getLampaAllapot(i);
             nezet.beallitLampaSzin(i, lampaAllapot);
+        }
+    }
+
+    private void kilepes() {
+        boolean kilep = nezet.megerositesKilepes();
+        if (kilep) {
+            System.exit(0);
         }
     }
 }

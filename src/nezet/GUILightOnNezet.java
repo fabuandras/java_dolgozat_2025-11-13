@@ -7,6 +7,7 @@ package nezet;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,6 +20,7 @@ public class GUILightOnNezet extends javax.swing.JFrame {
      */
     public GUILightOnNezet() {
         initComponents();
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         lblNyertel.setText("");
     }
 
@@ -47,10 +49,10 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         lblNyertel = new javax.swing.JLabel();
         mnuBar = new javax.swing.JMenuBar();
         mnuBeallitasok = new javax.swing.JMenu();
-        mnuUjJatek = new javax.swing.JMenu();
-        mnuMentesFajlba = new javax.swing.JMenu();
-        mnuBetoltes = new javax.swing.JMenu();
-        mnuKilepes = new javax.swing.JMenu();
+        mnuUjJatek = new javax.swing.JMenuItem();
+        mnuMentesFajlba = new javax.swing.JMenuItem();
+        mnuBetoltes = new javax.swing.JMenuItem();
+        mnuKilepes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LightOn Játék");
@@ -211,7 +213,6 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
     public JMenuItem getMnuUjJatek() {
         return mnuUjJatek;
     }
@@ -233,6 +234,16 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         }
     }
 
+    public JMenuItem getMnuKilepes() {
+        return mnuKilepes;
+    }
+
+    public boolean megerositesKilepes() {
+        int valasz = JOptionPane.showConfirmDialog(this, "Biztos ki szeretnél lépni?", "Kilépés", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        return valasz == JOptionPane.YES_OPTION;
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLampa1;
     private javax.swing.JButton btnLampa2;
@@ -249,10 +260,10 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     private javax.swing.JLabel lblNyertel;
     private javax.swing.JMenuBar mnuBar;
     private javax.swing.JMenu mnuBeallitasok;
-    private javax.swing.JMenu mnuBetoltes;
-    private javax.swing.JMenu mnuKilepes;
-    private javax.swing.JMenu mnuMentesFajlba;
-    private javax.swing.JMenu mnuUjJatek;
+    private javax.swing.JMenuItem mnuBetoltes;
+    private javax.swing.JMenuItem mnuKilepes;
+    private javax.swing.JMenuItem mnuMentesFajlba;
+    private javax.swing.JMenuItem mnuUjJatek;
     private javax.swing.JPanel pnlJatekter;
     // End of variables declaration//GEN-END:variables
 }

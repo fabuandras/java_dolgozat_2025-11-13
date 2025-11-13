@@ -9,26 +9,26 @@
             <Property name="text" type="java.lang.String" value="Be&#xe1;ll&#xed;t&#xe1;sok"/>
           </Properties>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="mnuUjJatek">
+            <MenuItem class="javax.swing.JMenuItem" name="mnuUjJatek">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#xda;j j&#xe1;t&#xe9;k"/>
               </Properties>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="mnuMentesFajlba">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mnuMentesFajlba">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ment&#xe9;s f&#xe1;jlba"/>
               </Properties>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="mnuBetoltes">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mnuBetoltes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Bet&#xf6;lt&#xe9;s f&#xe1;jlb&#xf3;l"/>
               </Properties>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="mnuKilepes">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mnuKilepes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Kil&#xe9;p&#xe9;s"/>
               </Properties>
-            </Menu>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>
