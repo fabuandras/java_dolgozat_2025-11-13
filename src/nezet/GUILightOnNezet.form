@@ -4,15 +4,27 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="mnuBar">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="mnuKilepes">
+        <Menu class="javax.swing.JMenu" name="mnuBeallitasok">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Kil&#xe9;p&#xe9;s"/>
+            <Property name="text" type="java.lang.String" value="Be&#xe1;ll&#xed;t&#xe1;sok"/>
           </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="mnuUjJatek">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="&#xda;j j&#xe1;t&#xe9;k"/>
-          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="mnuUjJatek">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#xda;j j&#xe1;t&#xe9;k"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnuMentesFajlba">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ment&#xe9;s f&#xe1;jlba"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnuKilepes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kil&#xe9;p&#xe9;s"/>
+              </Properties>
+            </Menu>
+          </SubComponents>
         </Menu>
       </SubComponents>
     </Menu>

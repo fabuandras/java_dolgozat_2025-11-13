@@ -41,8 +41,10 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         lblFeladatleiras = new javax.swing.JLabel();
         lblNyertel = new javax.swing.JLabel();
         mnuBar = new javax.swing.JMenuBar();
-        mnuKilepes = new javax.swing.JMenu();
+        mnuBeallitasok = new javax.swing.JMenu();
         mnuUjJatek = new javax.swing.JMenu();
+        mnuMentesFajlba = new javax.swing.JMenu();
+        mnuKilepes = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LightOn Játék");
@@ -139,11 +141,18 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         lblNyertel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNyertel.setText("Gratulálok! Sikerült lekapcsolnod az összes lámpát!");
 
-        mnuKilepes.setText("Kilépés");
-        mnuBar.add(mnuKilepes);
+        mnuBeallitasok.setText("Beállítások");
 
         mnuUjJatek.setText("Új játék");
-        mnuBar.add(mnuUjJatek);
+        mnuBeallitasok.add(mnuUjJatek);
+
+        mnuMentesFajlba.setText("Mentés fájlba");
+        mnuBeallitasok.add(mnuMentesFajlba);
+
+        mnuKilepes.setText("Kilépés");
+        mnuBeallitasok.add(mnuKilepes);
+
+        mnuBar.add(mnuBeallitasok);
 
         setJMenuBar(mnuBar);
 
@@ -241,7 +250,9 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     private javax.swing.JLabel lblLightOnCim;
     private javax.swing.JLabel lblNyertel;
     private javax.swing.JMenuBar mnuBar;
+    private javax.swing.JMenu mnuBeallitasok;
     private javax.swing.JMenu mnuKilepes;
+    private javax.swing.JMenu mnuMentesFajlba;
     private javax.swing.JMenu mnuUjJatek;
     private javax.swing.JPanel pnlJatekter;
     // End of variables declaration//GEN-END:variables
