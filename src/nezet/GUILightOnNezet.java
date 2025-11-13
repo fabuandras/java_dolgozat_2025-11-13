@@ -4,6 +4,10 @@
  */
 package nezet;
 
+import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JMenuItem;
+
 /**
  *
  * @author FabuAndrásNorbert(SZ
@@ -15,6 +19,7 @@ public class GUILightOnNezet extends javax.swing.JFrame {
      */
     public GUILightOnNezet() {
         initComponents();
+        lblNyertel.setText("");
     }
 
     /**
@@ -206,37 +211,26 @@ public class GUILightOnNezet extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUILightOnNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUILightOnNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUILightOnNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUILightOnNezet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    
+    public JMenuItem getMnuUjJatek() {
+        return mnuUjJatek;
+    }
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GUILightOnNezet().setVisible(true);
-            }
-        });
+    public JButton[] getLampaGombok() {
+        return new JButton[]{
+            btnLampa1, btnLampa2, btnLampa3,
+            btnLampa4, btnLampa5, btnLampa6,
+            btnLampa7, btnLampa8, btnLampa9
+        };
+    }
+
+    public void beallitLampaSzin(int index, boolean felkapcsolva) {
+        JButton gomb = getLampaGombok()[index];
+        if (felkapcsolva) {
+            gomb.setBackground(Color.YELLOW);
+        } else {
+            gomb.setBackground(new Color(102, 102, 102));
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
