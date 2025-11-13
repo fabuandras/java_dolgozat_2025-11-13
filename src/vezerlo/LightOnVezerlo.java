@@ -6,11 +6,13 @@ import model.LampaModell;
 import nezet.GUILightOnNezet;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.BufferedReader;
 
 import javax.swing.JButton;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -60,6 +62,9 @@ public class LightOnVezerlo {
 
         // Mentés fájlba menüpont
         nezet.getMnuMentesFajlba().addActionListener(e -> jatekMenteseFajlba());
+
+        // Betöltés fájlból menüpont
+        nezet.getMnuBetoltes().addActionListener(e -> jatekBetolteseFajlbol());
 
         lampaGombEsemenyek();
     }
@@ -112,6 +117,32 @@ public class LightOnVezerlo {
                 nezet.mutatUzenet("Játékállás sikeresen elmentve.");
             } catch (IOException ex) {
                 nezet.mutatUzenet("Hiba történt a mentés során: " + ex.getMessage());
+            }
+        }
+    }
+
+    // Betöltés fájlból menüpont
+    private void jatekBetolteseFajlbol() {
+        JFileChooser fajlValaszto = new JFileChooser();
+        int valasz = fajlValaszto.showOpenDialog(nezet);
+
+        if (valasz == JFileChooser.APPROVE_OPTION) {
+            File fajl = fajlValaszto.getSelectedFile();
+
+            try (BufferedReader olvaso = new BufferedReader(new FileReader(fajl))) {
+                String sor = olvaso.readLine();
+                modell.betoltesSzoveg(sor);
+                nezetFrissitese();
+
+                if (modell.osszesLampaLe()) {
+                    nezet.setNyertUzenet("Gratulálok! Sikerült lekapcsolnod az összes lámpát!");
+                } else {
+                    nezet.setNyertUzenet("");
+                }
+
+                nezet.mutatUzenet("Játékállás sikeresen betöltve.");
+            } catch (IOException ex) {
+                nezet.mutatUzenet("Hiba történt a betöltés során: " + ex.getMessage());
             }
         }
     }

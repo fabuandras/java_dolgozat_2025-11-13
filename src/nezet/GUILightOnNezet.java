@@ -259,6 +259,10 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, szoveg, "LightOn", JOptionPane.INFORMATION_MESSAGE);
     }
 
+    public JMenuItem getMnuBetoltes() {
+        return mnuBetoltes;
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLampa1;
     private javax.swing.JButton btnLampa2;
