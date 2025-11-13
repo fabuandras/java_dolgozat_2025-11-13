@@ -22,7 +22,7 @@ public class LampaModell {
             lampak[i] = Math.random() < 0.5;
         }
     }
-    
+
     public void valtLampa(int lampaSorszam) {
         lampak[lampaSorszam] = !lampak[lampaSorszam];
     }
@@ -35,4 +35,73 @@ public class LampaModell {
         }
         return true;
     }
+
+    public void lampaKattintas(int lampaSorszam) {
+        valtLampa(lampaSorszam);
+
+        switch (lampaSorszam) {
+            case 0:
+                valtLampa(1);
+                valtLampa(3);
+                break;
+            case 1:
+                valtLampa(0);
+                valtLampa(2);
+                valtLampa(4);
+                break;
+            case 2:
+                valtLampa(1);
+                valtLampa(5);
+                break;
+            case 3:
+                valtLampa(0);
+                valtLampa(4);
+                valtLampa(6);
+                break;
+            case 4:
+                valtLampa(1);
+                valtLampa(3);
+                valtLampa(5);
+                valtLampa(7);
+                break;
+            case 5:
+                valtLampa(2);
+                valtLampa(4);
+                valtLampa(8);
+                break;
+            case 6:
+                valtLampa(3);
+                valtLampa(7);
+                break;
+            case 7:
+                valtLampa(4);
+                valtLampa(6);
+                valtLampa(8);
+                break;
+            case 8:
+                valtLampa(5);
+                valtLampa(7);
+                break;
+        }
+    }
+
+    //Mentés fájlból menüpont
+    
+    public String mentesSzoveg() {
+        String eredmeny = "";
+        for (int i = 0; i < lampak.length; i++) {
+            eredmeny += lampak[i] ? "1" : "0";
+        }
+        return eredmeny;
+    }
+
+    public void betoltesSzoveg(String adat) {
+        if (adat == null || adat.length() < lampak.length) {
+            return;
+        }
+        for (int i = 0; i < lampak.length; i++) {
+            lampak[i] = adat.charAt(i) == '1';
+        }
+    }
+
 }

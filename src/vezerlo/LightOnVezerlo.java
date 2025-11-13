@@ -6,7 +6,13 @@ import model.LampaModell;
 import nezet.GUILightOnNezet;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
 import javax.swing.JButton;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class LightOnVezerlo {
 
@@ -52,6 +58,9 @@ public class LightOnVezerlo {
             }
         });
 
+        // Mentés fájlba menüpont
+        nezet.getMnuMentesFajlba().addActionListener(e -> jatekMenteseFajlba());
+
         lampaGombEsemenyek();
     }
 
@@ -86,6 +95,24 @@ public class LightOnVezerlo {
             nezet.setNyertUzenet("Gratulálok! Sikerült lekapcsolnod az összes lámpát!");
         } else {
             nezet.setNyertUzenet("");
+        }
+    }
+
+    // Mentés fájlba menüpont
+    private void jatekMenteseFajlba() {
+        JFileChooser fajlValaszto = new JFileChooser();
+        int valasz = fajlValaszto.showSaveDialog(nezet);
+
+        if (valasz == JFileChooser.APPROVE_OPTION) {
+            File fajl = fajlValaszto.getSelectedFile();
+
+            try (FileWriter iro = new FileWriter(fajl)) {
+                String adat = modell.mentesSzoveg();
+                iro.write(adat);
+                nezet.mutatUzenet("Játékállás sikeresen elmentve.");
+            } catch (IOException ex) {
+                nezet.mutatUzenet("Hiba történt a mentés során: " + ex.getMessage());
+            }
         }
     }
 

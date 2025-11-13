@@ -243,6 +243,21 @@ public class GUILightOnNezet extends javax.swing.JFrame {
         return valasz == JOptionPane.YES_OPTION;
     }
 
+    public JButton getBtnUjJatek() {
+        return btnUjJatek;
+    }
+
+    public void setNyertUzenet(String szoveg) {
+        lblNyertel.setText(szoveg);
+    }
+
+    public JMenuItem getMnuMentesFajlba() {
+        return mnuMentesFajlba;
+    }
+
+    public void mutatUzenet(String szoveg) {
+        JOptionPane.showMessageDialog(this, szoveg, "LightOn", JOptionPane.INFORMATION_MESSAGE);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLampa1;
